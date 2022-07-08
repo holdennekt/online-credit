@@ -4,10 +4,12 @@
 
 Перед початком використання потрібно:
 - Створити .env файл такого зразка:
-```
-SESSION_SECRET=<your_session_secret>
-DB_PASSWORD=<your_db_password>
-```
+
+  ```
+  SESSION_SECRET=<your_session_secret>
+  DB_PASSWORD=<your_db_password>
+  ```
+  
 - Створити mysql базу даних:
 
   1. Увійти в консольний інтерфейс mysql:
