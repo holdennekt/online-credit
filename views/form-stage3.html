@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Диплом</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./form-stage-style.css" />
+  </head>
+
+  <body>
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3>Enter data</h3>
+              <p class="m-0">Stage: 3/4</p>
+              <form id="form">
+                <div class="col-md-12 mt-2">
+                  <label>Purpose:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="purpose"
+                    placeholder="Purpose"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>From:</label>
+                  <input
+                    class="form-control"
+                    type="date"
+                    name="dateFrom"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Document number:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="documentNumber"
+                    placeholder="Document number"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>IPN:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="ipn"
+                    placeholder="IPN"
+                    required
+                  />
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <div class="form-button mt-3">
+                    <button class="btn btn-primary" type="reset">Reset</button>
+                  </div>
+                  <div class="form-button mt-3">
+                    <a
+                      class="btn btn-primary"
+                      href="http://localhost:8080/stage2"
+                      >Back</a
+                    >
+                  </div>
+                  <div class="form-button mt-3">
+                    <button
+                      class="btn btn-primary"
+                      formaction="http://localhost:8080/stage3"
+                      formmethod="post"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./form-stage-script.js"></script>
+  </body>
+</html>

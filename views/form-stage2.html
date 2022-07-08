@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Диплом</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./form-stage-style.css" />
+  </head>
+
+  <body>
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3>Enter data</h3>
+              <p class="m-0">Stage: 2/4</p>
+              <form id="form">
+                <div class="col-md-12 mt-2">
+                  <label>Occupation:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="occupation"
+                    placeholder="occupation"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Working status:</label>
+                  <select
+                    class="form-control"
+                    id="workingStatus"
+                    name="workingStatus"
+                    required
+                  >
+                    <option value="unemployed">Unemployed</option>
+                    <option value="employed">Employed</option>
+                  </select>
+                </div>
+
+                <div id="companyStuff">
+                  <div class="col-md-12 mt-2">
+                    <label>Work position:</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="workPosition"
+                      placeholder="work position"
+                      value="none"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12 mt-2">
+                    <label>Company name:</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="companyName"
+                      placeholder="company name"
+                      value="none"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>White income:</label>
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="whiteIncome"
+                    placeholder="official income"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Black income:</label>
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="blackIncome"
+                    placeholder="unofficial income"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Social status:</label>
+                  <select class="form-control" name="socialStatus" required>
+                    <option value="employee">Employee</option>
+                    <option value="student">Student</option>
+                    <option value="pensioner">Pensioner</option>
+                  </select>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <div class="form-button mt-3">
+                    <button class="btn btn-primary" type="reset">Reset</button>
+                  </div>
+                  <div class="form-button mt-3">
+                    <a
+                      class="btn btn-primary"
+                      href="http://localhost:8080/stage1"
+                      >Back</a
+                    >
+                  </div>
+                  <div class="form-button mt-3">
+                    <button
+                      class="btn btn-primary"
+                      formaction="http://localhost:8080/stage2"
+                      formmethod="post"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./form-stage-script.js"></script>
+    <script src="./form-stage2-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
+
+* body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100vh;
+  background-color: #75af26;
+  position: relative;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #212529;
+  border-radius: 100%;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+li:nth-child(2) {
+  margin-left: 25px;
+  animation-delay: 0.15s;
+}
+
+li:nth-child(3) {
+  margin-left: 25px;
+  animation-delay: 0.25s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-anim {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bounce-anim > h3 {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.answer-container {
+  display: none;
+  max-width: 600px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  text-align: left;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.answer-container > h3,
+.answer-container > h5,
+.answer-container > p {
+  margin-top: 5px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #6c757d;
+  color: #fff;
+  outline: none;
+  border: 0px;
+  box-shadow: none;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  text-decoration: none;
+}

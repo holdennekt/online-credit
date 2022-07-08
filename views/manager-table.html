@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Диплом</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./manager-table-style.css" />
+  </head>
+
+  <body>
+    <div class="table-container">
+      <div class="table-handler">
+        <h3>Credit requests</h3>
+        <div class="search-section">
+          <input id="firstNameSearch" type="text" placeholder="First name" />
+          <input id="lastNameSearch" type="text" placeholder="Last name" />
+          <input
+            id="documentNumberSearch"
+            type="text"
+            placeholder="Documnet number"
+          />
+          <input id="ipnSearch" type="text" placeholder="IPN" />
+          <button id="reset" class="btn btn-primary">Reset</button>
+          <button id="search" class="btn btn-primary">Search</button>
+        </div>
+        <table id="table">
+          <tr>
+            <td>num</td>
+            <td>first name</td>
+            <td>last name</td>
+            <td>age</td>
+            <td>amount</td>
+            <td>from</td>
+            <td>term</td>
+            <td>percent</td>
+            <td>phone num</td>
+            <td>document num</td>
+            <td>full info</td>
+            <td>status</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="mask"></div>
+    <div id="modal">
+      <h3>Client data</h3>
+      <div class="column1">
+        <div class="info-row">
+          <label>Credit status</label>
+          <input class="modal-input" id="creditStatus" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>First name</label>
+          <input class="modal-input" id="firstName" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Last name</label>
+          <input class="modal-input" id="lastName" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Age</label>
+          <input class="modal-input" id="age" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Phone number</label>
+          <input class="modal-input" id="phoneNumber" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Gender</label>
+          <input class="modal-input" id="gender" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Money amount</label>
+          <input class="modal-input" id="moneyAmount" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>From date (y-m-d)</label>
+          <input class="modal-input" id="dateFrom" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Months number</label>
+          <input class="modal-input" id="monthsNumber" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Percent</label>
+          <input class="modal-input" id="percent" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Documnet number</label>
+          <input class="modal-input" id="documentNumber" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>IPN</label>
+          <input class="modal-input" id="ipn" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Social status</label>
+          <input class="modal-input" id="socialStatus" type="text" readonly />
+        </div>
+      </div>
+      <div class="column2">
+        <div class="info-row">
+          <label>Marital status</label>
+          <input class="modal-input" id="maritalStatus" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>White income</label>
+          <input class="modal-input" id="whiteIncome" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Black income</label>
+          <input class="modal-input" id="blackIncome" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Occuppation</label>
+          <input class="modal-input" id="occuppation" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Working status</label>
+          <input class="modal-input" id="workingStatus" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Work position</label>
+          <input class="modal-input" id="workPosition" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Company name</label>
+          <input class="modal-input" id="companyName" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Purpose</label>
+          <input class="modal-input" id="purpose" type="text" readonly />
+        </div>
+        <div class="info-row">
+          <label>Your comment:</label>
+        </div>
+        <div class="info-row comment-section">
+          <textarea class="modal-input" id="comment"></textarea>
+        </div>
+      </div>
+      <div class="column3">
+        <div class="payment-row">
+          <p>Monthly payments:</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="reject" class="modal-button">Reject</button>
+        <button id="confirm" class="modal-button">Confirm</button>
+      </div>
+      <button id="close">X</button>
+    </div>
+    <script src="./manager-table-script.js"></script>
+  </body>
+</html>

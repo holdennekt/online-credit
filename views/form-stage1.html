@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Диплом</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./form-stage-style.css" />
+  </head>
+
+  <body>
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3>Enter data</h3>
+              <p class="m-0">Stage: 1/4</p>
+              <form id="form">
+                <div class="col-md-12 mt-2">
+                  <label>First name:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="firstName"
+                    placeholder="first Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Last name:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="lastName"
+                    placeholder="last Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Age:</label>
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="age"
+                    min="18"
+                    placeholder="age"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Phone number:</label>
+                  <input
+                    class="form-control"
+                    type="tel"
+                    name="phoneNumber"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    placeholder="0931234567"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Gender:</label>
+                  <select class="form-control" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label>Married:</label>
+                  <select class="form-control" name="maritalStatus" required>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                  </select>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <div class="form-button mt-3">
+                    <button class="btn btn-primary" type="reset">Reset</button>
+                  </div>
+                  <div class="form-button mt-3">
+                    <button
+                      class="btn btn-primary"
+                      formaction="http://localhost:8080/stage1"
+                      formmethod="post"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./form-stage-script.js"></script>
+  </body>
+</html>

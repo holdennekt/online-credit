@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Диплом</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./form-stage-style.css" />
+  </head>
+
+  <body>
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <p class="m-0">Stage: 4/4</p>
+              <form id="form">
+                <div class="col-md-12 mt-2">
+                  <label id="moneyAmountLabel">Money amount:</label>
+                  <input
+                    id="moneyAmount"
+                    class="form-control"
+                    type="number"
+                    name="moneyAmount"
+                    placeholder="amount of money in dollars"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label id="termLabel" class="mr-1">Term:</label>
+                  <input
+                    id="months"
+                    class="form-control"
+                    type="number"
+                    name="monthsNumber"
+                    min="1"
+                    max="12"
+                    placeholder="number of months 1-12"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label class="mr-1">Monthly payment amounts:</label>
+                  <table id="monthlyPaymentTable" class="mt-2"></table>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label class="mr-1">Total payment amount:</label>
+                  <input
+                    id="totalPayment"
+                    class="form-control"
+                    type="number"
+                    placeholder="enter months"
+                    readonly
+                  />
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <div class="form-button mt-3">
+                    <button class="btn btn-primary" type="reset">Reset</button>
+                  </div>
+                  <div class="form-button mt-3">
+                    <a
+                      class="btn btn-primary"
+                      href="http://localhost:8080/stage1"
+                      >Home</a
+                    >
+                  </div>
+                  <div class="form-button mt-3">
+                    <a
+                      class="btn btn-primary"
+                      href="http://localhost:8080/stage3"
+                      >Back</a
+                    >
+                  </div>
+                  <div class="form-button mt-3">
+                    <button
+                      class="btn btn-primary"
+                      formaction="http://localhost:8080/stage4"
+                      formmethod="post"
+                    >
+                      Send form
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./getMonthlyPayments.js"></script>
+    <script src="./form-stage4-script.js"></script>
+  </body>
+</html>
