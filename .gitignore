@@ -3,3 +3,4 @@ tables-fill.js
 tables-initialize.js
 tables-reset.js
 node_modules
+.DS_Store
